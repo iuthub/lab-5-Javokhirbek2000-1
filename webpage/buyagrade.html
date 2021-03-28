@@ -15,25 +15,37 @@
 		<hr />
 		
 		<h2>Give Us Your Money</h2>
+		<form action="sucker.php" method="post">
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="name">
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="section" size="1" required="true">
+					<option>(select a section)</option>
+					<option value="001">001</option>
+					<option value="002">002</option>
+					<option value="004">004</option>
+					<option value="005">005</option>
+					<option value="006">006</option>
+				</select>
 			</dd>
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="cardNumber" required>
+				<br/>
+				<input type="radio" name="cardType" value="Visa">Visa
+				<input type="radio" name="cardType" value="Master">Master Card
 			</dd>
 		</dl>
-		
+
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker.">
 		</div>
+		</form>
 	</body>
 </html>
